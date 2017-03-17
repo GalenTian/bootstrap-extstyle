@@ -1,0 +1,20 @@
+{
+  "name": "bootstrap-extstyle",
+  "version": "0.1.0",
+  "description": "A style framework extends Bootstrap 3.x original styles. Adding more classes and extending the original.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "homepage": "",
+  "author": "Galen Tian <galen_tian@126.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-cleancss": "^0.2.2",
+    "gulp-header": "^1.8.7",
+    "gulp-less": "^3.0.5",
+    "gulp-rename": "^1.2.2",
+    "yargs": "^4.7.1"
+  }
+}
