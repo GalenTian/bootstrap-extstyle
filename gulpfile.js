@@ -14,7 +14,7 @@ var banner = '/* Version: <%= version %> | Licensed under MIT (https://github.co
         version: argv.v ? argv.v : '0.1.0'
     };
 
-var mainFile = './less/bootstrap-ext.less',
+var mainFile = './less/bootstrap-extstyle.less',
 
     projectName = 'bootstrap-extstyle',
 
