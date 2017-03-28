@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/roctive/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 10:15 Mar 22, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/roctive/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:30 Mar 27, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -3497,6 +3497,96 @@ input[type="submit"].btn-block,
 input[type="reset"].btn-block,
 input[type="button"].btn-block {
   width: 100%;
+}
+.margin-base {
+  margin: 20px;
+}
+.margin-top-base {
+  margin-top: 20px;
+}
+.margin-bottom-base {
+  margin-bottom: 20px;
+}
+.margin-left-base {
+  margin-left: 20px;
+}
+.margin-right-base {
+  margin-right: 20px;
+}
+.margin-large {
+  margin: 25px;
+}
+.margin-top-large {
+  margin-top: 25px;
+}
+.margin-bottom-large {
+  margin-bottom: 25px;
+}
+.margin-left-large {
+  margin-left: 25px;
+}
+.margin-right-large {
+  margin-right: 25px;
+}
+.margin-xl {
+  margin: 30px;
+}
+.margin-top-xl {
+  margin-top: 30px;
+}
+.margin-bottom-xl {
+  margin-bottom: 30px;
+}
+.margin-left-xl {
+  margin-left: 30px;
+}
+.margin-right-xl {
+  margin-right: 30px;
+}
+.margin-small {
+  margin: 15px;
+}
+.margin-top-small {
+  margin-top: 15px;
+}
+.margin-bottom-small {
+  margin-bottom: 15px;
+}
+.margin-left-small {
+  margin-left: 15px;
+}
+.margin-right-small {
+  margin-right: 15px;
+}
+.margin-xs {
+  margin: 10px;
+}
+.margin-top-xs {
+  margin-top: 10px;
+}
+.margin-bottom-xs {
+  margin-bottom: 10px;
+}
+.margin-left-xs {
+  margin-left: 10px;
+}
+.margin-right-xs {
+  margin-right: 10px;
+}
+.margin-clear {
+  margin: 0;
+}
+.margin-top-clear {
+  margin-top: 0;
+}
+.margin-bottom-clear {
+  margin-bottom: 0;
+}
+.margin-left-clear {
+  margin-left: 0;
+}
+.margin-right-clear {
+  margin-right: 0;
 }
 .fade {
   opacity: 0;
