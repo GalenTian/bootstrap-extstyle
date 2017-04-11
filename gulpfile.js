@@ -6,7 +6,7 @@
     header = require('gulp-header'),
     argv = require('yargs').argv;
 
-var banner = '/* Version: <%= version %> | Licensed under MIT (https://github.com/roctive/bootstrap-extstyle/blob/master/LICENSE) | Packaged at <%= date %> */\n',
+var banner = '/* Version: <%= version %> | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at <%= date %> */\n',
     date = new Date(),
     months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
     bannerJson = {
@@ -14,7 +14,7 @@ var banner = '/* Version: <%= version %> | Licensed under MIT (https://github.co
         version: argv.v ? argv.v : '0.1.0'
     };
 
-var mainFile = './less/bootstrap-extstyle.less',
+var mainFile = './themes/bootstrap/build.less',
 
     projectName = 'bootstrap-extstyle',
 
@@ -26,7 +26,7 @@ var mainFile = './less/bootstrap-extstyle.less',
     
     allFiles = '*.*';
 
-var tasks = ['clean', 'css'];
+var tasks = ['clean', 'css', 'css1', 'css2'];
 
 gulp.task(tasks[0], function () {
     return gulp.src(distFolder, { read: false }).pipe(clean());
@@ -38,11 +38,37 @@ gulp.task(tasks[1], [tasks[0]], function () {
         .pipe(less())
         .pipe(header(banner, bannerJson))
         .pipe(rename(projectName + cssExt))
-        .pipe(gulp.dest(distFolder))
+        .pipe(gulp.dest(distFolder + 'bootstrap/css/'))
         .pipe(rename(projectName + minCssExt))
         .pipe(cleancss())
         //.pipe(header(banner, bannerJson))
-        .pipe(gulp.dest(distFolder));
+        .pipe(gulp.dest(distFolder + 'bootstrap/css/'));
+});
+
+gulp.task(tasks[2], [tasks[0]], function () {
+    
+    return gulp.src('./themes/blue/build.less')
+        .pipe(less())
+        .pipe(header(banner, bannerJson))
+        .pipe(rename(projectName + cssExt))
+        .pipe(gulp.dest(distFolder + 'blue/css/'))
+        .pipe(rename(projectName + minCssExt))
+        .pipe(cleancss())
+        //.pipe(header(banner, bannerJson))
+        .pipe(gulp.dest(distFolder + 'blue/css/'));
+});
+
+gulp.task(tasks[3], [tasks[0]], function () {
+    
+    return gulp.src('./themes/blue-glass/build.less')
+        .pipe(less())
+        .pipe(header(banner, bannerJson))
+        .pipe(rename(projectName + cssExt))
+        .pipe(gulp.dest(distFolder + 'blue-glass/css/'))
+        .pipe(rename(projectName + minCssExt))
+        .pipe(cleancss())
+        //.pipe(header(banner, bannerJson))
+        .pipe(gulp.dest(distFolder + 'blue-glass/css/'));
 });
 
 gulp.task('default', tasks, function () {

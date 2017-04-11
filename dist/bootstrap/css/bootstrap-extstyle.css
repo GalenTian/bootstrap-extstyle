@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/roctive/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:30 Mar 27, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 19:38 Apr 11, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -262,6 +262,21 @@ th {
   line-height: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+.glyphicon-base {
+  font-size: 16px;
+}
+.glyphicon-large {
+  font-size: 24px;
+}
+.glyphicon-xl {
+  font-size: 32px;
+}
+.glyphicon-small {
+  font-size: 12px;
+}
+.glyphicon-xs {
+  font-size: 8px;
 }
 .glyphicon-asterisk:before {
   content: "\2a";
@@ -1309,6 +1324,10 @@ mark,
 .text-nowrap {
   white-space: nowrap;
 }
+.text-wrap {
+  word-break: break-word;
+  word-wrap: break-word;
+}
 .text-lowercase {
   text-transform: lowercase;
 }
@@ -1391,6 +1410,13 @@ a.bg-warning:focus {
 a.bg-danger:hover,
 a.bg-danger:focus {
   background-color: #e4b9b9;
+}
+.bg-gray {
+  background-color: #eeeeee;
+}
+a.bg-gray:hover,
+a.bg-gray:focus {
+  background-color: #d5d5d5;
 }
 .page-header {
   padding-bottom: 9px;
@@ -3574,19 +3600,313 @@ input[type="button"].btn-block {
   margin-right: 10px;
 }
 .margin-clear {
-  margin: 0;
+  margin: 0 !important;
 }
 .margin-top-clear {
-  margin-top: 0;
+  margin-top: 0 !important;
 }
 .margin-bottom-clear {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
 }
 .margin-left-clear {
-  margin-left: 0;
+  margin-left: 0 !important;
 }
 .margin-right-clear {
-  margin-right: 0;
+  margin-right: 0 !important;
+}
+.padding-base {
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.padding-large {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+.padding-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.padding-xs {
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.padding-vertical-base {
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+.padding-vertical-large {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.padding-vertical-small {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.padding-vertical-xs {
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.padding-horizontal-base {
+  padding-left: 12px;
+  padding-right: 12px;
+}
+.padding-horizontal-large {
+  padding-top: 16px;
+  padding-bottom: 16px;
+}
+.padding-horizontal-small {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.padding-horizontal-xs {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.padding-clear {
+  padding: 0 !important;
+}
+.padding-top-clear {
+  padding-top: 0 !important;
+}
+.padding-bottom-clear {
+  padding-bottom: 0 !important;
+}
+.padding-left-clear {
+  padding-left: 0 !important;
+}
+.padding-right-clear {
+  padding-right: 0 !important;
+}
+.border {
+  border: 1px solid #c9c9c9 !important;
+}
+.border-top {
+  border-top: 1px solid #c9c9c9 !important;
+}
+.border-bottom {
+  border-bottom: 1px solid #c9c9c9 !important;
+}
+.border-left {
+  border-left: 1px solid #c9c9c9 !important;
+}
+.border-right {
+  border-right: 1px solid #c9c9c9 !important;
+}
+.border-thick {
+  border-width: 3px !important;
+}
+.border-top-thick {
+  border-top-width: 3px !important;
+}
+.border-bottom-thick {
+  border-bottom-width: 3px !important;
+}
+.border-left-thick {
+  border-left-width: 3px !important;
+}
+.border-right-thick {
+  border-right-width: 3px !important;
+}
+.border-color-primary {
+  border-color: #2e81a4 !important;
+}
+.border-top-color-primary {
+  border-top-color: #2e81a4 !important;
+}
+.border-bottom-color-primary {
+  border-bottom-color: #2e81a4 !important;
+}
+.border-left-color-primary {
+  border-left-color: #2e81a4 !important;
+}
+.border-right-color-primary {
+  border-right-color: #2e81a4 !important;
+}
+.border-color-danger {
+  border-color: #ebccd1 !important;
+}
+.border-top-color-danger {
+  border-top-color: #ebccd1 !important;
+}
+.border-bottom-color-danger {
+  border-bottom-color: #ebccd1 !important;
+}
+.border-left-color-danger {
+  border-left-color: #ebccd1 !important;
+}
+.border-right-color-danger {
+  border-right-color: #ebccd1 !important;
+}
+.border-color-warning {
+  border-color: #faebcc !important;
+}
+.border-top-color-warning {
+  border-top-color: #faebcc !important;
+}
+.border-bottom-color-warning {
+  border-bottom-color: #faebcc !important;
+}
+.border-left-color-warning {
+  border-left-color: #faebcc !important;
+}
+.border-right-color-warning {
+  border-right-color: #faebcc !important;
+}
+.border-color-info {
+  border-color: #bce8f1 !important;
+}
+.border-top-color-info {
+  border-top-color: #bce8f1 !important;
+}
+.border-bottom-color-info {
+  border-bottom-color: #bce8f1 !important;
+}
+.border-left-color-info {
+  border-left-color: #bce8f1 !important;
+}
+.border-right-color-info {
+  border-right-color: #bce8f1 !important;
+}
+.border-color-success {
+  border-color: #d6e9c6 !important;
+}
+.border-top-color-success {
+  border-top-color: #d6e9c6 !important;
+}
+.border-bottom-color-success {
+  border-bottom-color: #d6e9c6 !important;
+}
+.border-left-color-success {
+  border-left-color: #d6e9c6 !important;
+}
+.border-right-color-success {
+  border-right-color: #d6e9c6 !important;
+}
+.border-dotted {
+  border-style: dotted !important;
+}
+.border-top-dotted {
+  border-top-style: dotted !important;
+}
+.border-bottom-dotted {
+  border-bottom-style: dotted !important;
+}
+.border-left-dotted {
+  border-left-style: dotted !important;
+}
+.border-right-dotted {
+  border-right-style: dotted !important;
+}
+.border-clear {
+  border: none !important;
+}
+.border-left-clear {
+  border-left: none !important;
+}
+.border-right-clear {
+  border-right: none !important;
+}
+.border-top-clear {
+  border-top: none !important;
+}
+.border-bottom-clear {
+  border-bottom: none !important;
+}
+.border-radius {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.border-top-radius {
+  border-top-right-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.border-right-radius {
+  border-bottom-right-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.border-bottom-radius {
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.border-left-radius {
+  border-bottom-left-radius: 4px;
+  border-top-left-radius: 4px;
+}
+.border-radius-small {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.border-top-radius-small {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.border-right-radius-small {
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+}
+.border-bottom-radius-small {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+.border-left-radius-small {
+  border-bottom-left-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.border-radius-large {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.border-top-radius-large {
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.border-right-radius-large {
+  border-bottom-right-radius: 6px;
+  border-top-right-radius: 6px;
+}
+.border-bottom-radius-large {
+  border-bottom-right-radius: 6px;
+  border-bottom-left-radius: 6px;
+}
+.border-left-radius-large {
+  border-bottom-left-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.border-radius-clear {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.border-top-radius-clear {
+  border-top-right-radius: 0;
+  border-top-left-radius: 0;
+}
+.border-right-radius-clear {
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+}
+.border-bottom-radius-clear {
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+.border-left-radius-clear {
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
 }
 .fade {
   opacity: 0;

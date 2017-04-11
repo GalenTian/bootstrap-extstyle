@@ -92,6 +92,7 @@ mark,
 .text-center         { text-align: center; }
 .text-justify        { text-align: justify; }
 .text-nowrap         { white-space: nowrap; }
+.text-wrap           { word-break: break-word; word-wrap: break-word; }
 
 // Transformation
 .text-lowercase      { text-transform: lowercase; }
@@ -138,6 +139,9 @@ mark,
 }
 .bg-danger {
   .bg-variant(@state-danger-bg);
+}
+.bg-gray {
+  .bg-variant(@state-gray-bg);
 }
 
 
