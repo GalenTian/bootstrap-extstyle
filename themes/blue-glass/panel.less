@@ -1,23 +1,56 @@
 .panel {
-    .box-shadow(0 6px 12px rgba(0,0,0,.175));
-    
     position: relative;
     border: none;
     border-radius: @border-radius-xxl;
     background: transparent;
     
-    > .panel-body {
-        position: relative;
-        z-index: 1;
+    > .panel-heading {
+        padding: 15px 15px 0;
         
-        ul {
+        > .panel-title {
+            .box-shadow(0 6px 12px rgba(0,0,0,.175));
+            
+            display: inline-block;
+            position: relative;
+            left: -45px;
+            font-weight: bold;
+            
+            padding: 3px 15px 3px 45px;
+        }
+    }
+    
+    > .panel-body {
+        > ul {
             list-style: none;
             padding: 0;
             
             > li {
-                margin-top: @margin-small;
-            
+                margin-top: 10px;
                 .text-wrap();
+                
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+    
+    > .panel-footer {
+        background: transparent;
+        
+        > .btn-toolbar {
+            > .btn-group {
+                .btn-default {
+                    background: transparent;
+                    border: none;
+                    color: #fff;
+                    
+                    &.active {
+                        background: #fff;
+                        .border-radius();
+                        color: #51bae7;
+                    }
+                }
             }
         }
     }

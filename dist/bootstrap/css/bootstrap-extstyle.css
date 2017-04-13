@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 19:38 Apr 11, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 21:2 Apr 12, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5950,6 +5950,17 @@ button.list-group-item-danger.active:focus {
   padding-left: 15px;
   padding-right: 15px;
 }
+.panel > .panel-table > .table,
+.panel > .panel-table > .table-responsive > .table,
+.panel > .panel-table > .panel-collapse > .table {
+  margin-bottom: 0;
+}
+.panel > .panel-table > .table caption,
+.panel > .panel-table > .table-responsive > .table caption,
+.panel > .panel-table > .panel-collapse > .table caption {
+  padding-left: 15px;
+  padding-right: 15px;
+}
 .panel > .table:first-child,
 .panel > .table-responsive:first-child > .table:first-child {
   border-top-right-radius: 3px;
@@ -6018,6 +6029,14 @@ button.list-group-item-danger.active:focus {
 .panel > .panel-body + .table-responsive,
 .panel > .table + .panel-body,
 .panel > .table-responsive + .panel-body {
+  border-top: 1px solid #ddd;
+}
+.panel > .panel-body + .panel-table > .table,
+.panel > .panel-body + .panel-table > .table-responsive {
+  border-top: 1px solid #ddd;
+}
+.panel > .panel-table + .panel-body,
+.panel > .panel-table + .panel-body {
   border-top: 1px solid #ddd;
 }
 .panel > .table > tbody:first-child > tr:first-child th,
