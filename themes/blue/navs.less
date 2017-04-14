@@ -1,0 +1,42 @@
+.nav-tabs {
+    > li {
+        > a {
+            font-weight: bold;
+        }
+        
+        &.active:after {
+            content: " ";
+            display: block;
+            width: 20px;
+            margin: 0 auto;
+            border-width: 0 10px 10px 10px;
+            border-style: solid;
+            border-color: transparent transparent @brand-primary transparent;
+        }
+    }
+}
+.nav-tabs.nav-justified {
+    border-bottom: 1px solid @brand-primary;
+    
+    > li {
+        > a {
+            font-weight: bold;
+            border: none;
+            padding: 0;
+        }
+        
+        &.active {
+            
+            &:after {
+                content: " ";
+                display: block;
+                width: 20px;
+                margin: 0 auto;
+                border-width: 0 10px 10px 10px;
+                border-style: solid;
+                border-color: transparent transparent @brand-primary transparent;
+            }
+        }
+        
+    }
+}
