@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 17:1 Apr 13, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 17:19 Apr 17, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -7188,6 +7188,33 @@ button.close {
     display: none !important;
   }
 }
+.nav-stacked {
+  padding-top: 15px;
+}
+.nav-stacked > li {
+  border-bottom: 1px solid #164d61;
+}
+.nav-stacked > li:first-child {
+  border-top: 1px solid #164d61;
+}
+.nav-stacked > li > a {
+  padding: 15px 40px;
+  font-size: 16px;
+  color: #164d61;
+}
+.nav-stacked > li > a:hover,
+.nav-stacked > li > a.hover,
+.nav-stacked > li > a:focus,
+.nav-stacked > li > a.focus {
+  background: #00A5E1;
+  color: white;
+}
+.nav-stacked > li:active > a,
+.nav-stacked > li.active > a {
+  color: #e9eff2;
+  border-left: 3px solid #eb8420;
+  padding-left: 37px;
+}
 .panel {
   position: relative;
   border: none;
@@ -7234,16 +7261,13 @@ button.close {
   border-bottom-left-radius: 4px;
   color: #51bae7;
 }
-html {
-  position: relative;
-  height: 100%;
+.thumbnail {
+  background: transparent;
+  border: none;
+  padding-top: 10px;
+  margin-bottom: 0;
 }
 body {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  min-height: 100%;
   background: #00a5e1;
   color: #fff;
 }

@@ -1,0 +1,34 @@
+.nav-stacked {
+    padding-top: 15px;
+    
+    > li {
+        border-bottom: 1px solid #164d61;
+        
+        &:first-child {
+            border-top: 1px solid #164d61;
+        }
+        
+        > a {
+            padding: 15px 40px;
+            font-size: 16px;
+            color: #164d61;
+            
+            &:hover, 
+            &.hover,
+            &:focus,
+            &.focus {
+                background: #00A5E1;
+                color: white;
+            }
+        }
+        
+        &:active,
+        &.active {
+            > a {
+                color: #e9eff2;
+                border-left: 3px solid #eb8420;
+                padding-left: 37px;
+            }
+        }
+    }
+}
