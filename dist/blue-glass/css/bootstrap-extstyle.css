@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:51 Apr 28, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:56 May 11, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5885,8 +5885,40 @@ button.list-group-item-danger.active:focus {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
+.panel-heading:before,
+.panel-heading:after {
+  content: " ";
+  display: table;
+}
+.panel-heading:after {
+  clear: both;
+}
+.panel-heading:before,
+.panel-heading:after {
+  content: " ";
+  display: table;
+}
+.panel-heading:after {
+  clear: both;
+}
 .panel-heading > .dropdown .dropdown-toggle {
   color: inherit;
+}
+.panel-heading .btn {
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
+.panel-heading .btn-lg {
+  margin-top: -10px;
+  margin-bottom: -10px;
+}
+.panel-heading .btn-sm {
+  margin-top: -5px;
+  margin-bottom: -5px;
+}
+.panel-heading .btn-xs {
+  margin-top: -1px;
+  margin-bottom: -1px;
 }
 .panel-title {
   margin-top: 0;

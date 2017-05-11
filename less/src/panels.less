@@ -23,9 +23,28 @@
   padding: @panel-heading-padding;
   border-bottom: 1px solid transparent;
   .border-top-radius((@panel-border-radius - 1));
+  
+  .clearfix();
 
   > .dropdown .dropdown-toggle {
     color: inherit;
+  }
+  
+  .btn {
+      margin-top: (@padding-base-vertical * -1);
+      margin-bottom: (@padding-base-vertical * -1);
+  }
+  .btn-lg {
+      margin-top: (@padding-large-vertical * -1);
+      margin-bottom: (@padding-large-vertical * -1);
+  }
+  .btn-sm {
+      margin-top: (@padding-small-vertical * -1);
+      margin-bottom: (@padding-small-vertical * -1);
+  }
+  .btn-xs {
+      margin-top: (@padding-xs-vertical * -1);
+      margin-bottom: (@padding-xs-vertical * -1);
   }
 }
 
