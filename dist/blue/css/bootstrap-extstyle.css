@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:30 May 19, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:35 May 27, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4371,6 +4371,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .input-group-addon:first-child {
   border-right: 0;
 }
+.input-group-addon:not(:first-child) {
+  border-left: 0;
+}
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
@@ -4383,6 +4386,9 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 .input-group-addon:last-child {
   border-left: 0;
+}
+.input-group-addon:not(:last-child) {
+  border-right: 0;
 }
 .input-group-btn {
   position: relative;

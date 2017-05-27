@@ -113,6 +113,9 @@
 .input-group-addon:first-child {
   border-right: 0;
 }
+.input-group-addon:not(:first-child) {
+  border-left: 0;
+}
 .input-group .form-control:last-child,
 .input-group-addon:last-child,
 .input-group-btn:last-child > .btn,
@@ -124,6 +127,9 @@
 }
 .input-group-addon:last-child {
   border-left: 0;
+}
+.input-group-addon:not(:last-child) {
+  border-right: 0;
 }
 
 // Button input groups
