@@ -1,0 +1,21 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "es6": true,
+    "jquery": true
+  },
+  "extends": ["plugin:css-modules/recommended"],
+  "plugins": [
+      "standard",
+      "promise",
+      "html",
+      "css-modules"
+  ],
+  "rules": {
+    "semi": [
+        "error",
+        "always"
+    ]
+  }
+}
