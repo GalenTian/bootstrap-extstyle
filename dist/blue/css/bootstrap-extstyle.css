@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 11:24 Jun 1, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:2 Jun 5, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2497,6 +2497,27 @@ table th[class*="col-"] {
     border-bottom: 0;
   }
 }
+.table-container {
+  position: relative;
+}
+.table-container > .frozen-head-container,
+.table-container > .frozen-column-container,
+.table-container > .frozen-column-head-container {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.table-container > .origin-table-container {
+  overflow: auto;
+}
+.table-container > .frozen-head-container {
+  width: 100%;
+  background-color: transparent;
+  overflow: hidden;
+}
+.table-fixed {
+  table-layout: fixed;
+}
 fieldset {
   padding: 0;
   margin: 0;
@@ -2603,6 +2624,15 @@ fieldset[disabled] .form-control {
 textarea.form-control {
   height: auto;
   resize: vertical;
+}
+.form-control .caret {
+  position: absolute;
+  right: 8px;
+  top: 48%;
+}
+.dropdown .form-control.btn {
+  padding-right: 20px;
+  text-align: left;
 }
 input[type="search"] {
   -webkit-appearance: none;
@@ -5992,14 +6022,14 @@ button.list-group-item-danger.active:focus {
   padding-left: 15px;
   padding-right: 15px;
 }
-.panel > .panel-table > .table,
-.panel > .panel-table > .table-responsive > .table,
-.panel > .panel-table > .panel-collapse > .table {
+.panel > .panel-table .table,
+.panel > .panel-table .table-responsive > .table,
+.panel > .panel-table .panel-collapse > .table {
   margin-bottom: 0;
 }
-.panel > .panel-table > .table caption,
-.panel > .panel-table > .table-responsive > .table caption,
-.panel > .panel-table > .panel-collapse > .table caption {
+.panel > .panel-table .table caption,
+.panel > .panel-table .table-responsive > .table caption,
+.panel > .panel-table .panel-collapse > .table caption {
   padding-left: 15px;
   padding-right: 15px;
 }

@@ -23,13 +23,13 @@
   padding: @panel-heading-padding;
   border-bottom: 1px solid transparent;
   .border-top-radius((@panel-border-radius - 1));
-  
+
   .clearfix();
 
   > .dropdown .dropdown-toggle {
     color: inherit;
   }
-  
+
   .btn {
       margin-top: (@padding-base-vertical * -1);
       margin-bottom: (@padding-base-vertical * -1);
@@ -137,16 +137,16 @@
     }
   }
   > .panel-table {
-      > .table,
-      > .table-responsive > .table,
-      > .panel-collapse > .table {
-        margin-bottom: 0;
-    
-        caption {
-          padding-left: @panel-body-padding;
-          padding-right: @panel-body-padding;
-        }
+    .table,
+    .table-responsive > .table,
+    .panel-collapse > .table {
+      margin-bottom: 0;
+
+      caption {
+        padding-left: @panel-body-padding;
+        padding-right: @panel-body-padding;
       }
+    }
   }
   // Add border top radius for first one
   > .table:first-child,

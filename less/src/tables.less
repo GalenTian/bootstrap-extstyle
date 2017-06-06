@@ -232,3 +232,33 @@ table {
     }
   }
 }
+
+// Frozen tables
+//
+// Freeze the columns of the table. And Freeze left columns if you set
+// frozenCount option of Table widget in ExistingJS.
+.table-container {
+  position: relative;
+
+  > .frozen-head-container,
+  > .frozen-column-container,
+  > .frozen-column-head-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+
+  > .origin-table-container {
+      overflow: auto;
+  }
+
+  > .frozen-head-container {
+    width: 100%;
+    background-color: @table-bg;
+    overflow: hidden;
+  }
+}
+
+.table-fixed {
+    table-layout: fixed;
+}
