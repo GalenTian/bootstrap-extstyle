@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:2 Jun 5, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 12:54 Jun 9, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -2514,6 +2514,29 @@ table th[class*="col-"] {
   width: 100%;
   background-color: transparent;
   overflow: hidden;
+}
+.table-container > .frozen-head-container > table > thead > tr > th.sortable {
+  position: relative;
+  padding-right: 24px;
+  cursor: pointer;
+}
+.table-container > .frozen-head-container > table > thead > tr > th.sortable:hover {
+  background: #f5f5f5;
+}
+.table-container > .frozen-head-container > table > thead > tr > th.sortable.asc:before,
+.table-container > .frozen-head-container > table > thead > tr > th.sortable.desc:before {
+  position: absolute;
+  right: 8px;
+  top: 15px;
+  content: ' ';
+  border-style: solid;
+  border-color: #333333 transparent #333333 transparent;
+}
+.table-container > .frozen-head-container > table > thead > tr > th.sortable.asc:before {
+  border-width: 0 7px 10px 7px;
+}
+.table-container > .frozen-head-container > table > thead > tr > th.sortable.desc:before {
+  border-width: 10px 7px 0 7px;
 }
 .table-fixed {
   table-layout: fixed;

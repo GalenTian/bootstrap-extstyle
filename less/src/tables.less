@@ -256,6 +256,45 @@ table {
     width: 100%;
     background-color: @table-bg;
     overflow: hidden;
+
+    > table > thead > tr > th.sortable {
+      position: relative;
+
+      padding-right: 24px;
+
+      cursor: pointer;
+
+      &:hover {
+        background: @table-bg-hover;
+      }
+
+      &.asc,
+      &.desc {
+
+        &:before {
+          position: absolute;
+          right: 8px;
+          top: 15px;
+
+          content: ' ';
+
+          border-style: solid;
+          border-color: @text-color transparent @text-color transparent;
+        }
+      }
+      &.asc {
+
+        &:before {
+          border-width: 0 7px 10px 7px;
+        }
+      }
+      &.desc {
+
+        &:before {
+          border-width: 10px 7px 0 7px;
+        }
+      }
+    }
   }
 }
 
