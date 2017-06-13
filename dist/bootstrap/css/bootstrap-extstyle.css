@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 12:54 Jun 9, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 9:44 Jun 13, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4035,6 +4035,7 @@ tbody.collapse.in {
   -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   background-clip: padding-box;
+  overflow: auto;
 }
 .dropdown-menu.pull-right {
   right: 0;
@@ -4054,6 +4055,16 @@ tbody.collapse.in {
   line-height: 1.42857143;
   color: #333333;
   white-space: nowrap;
+}
+.dropdown-menu > li > .checkbox {
+  display: block;
+  padding: 6px 12px;
+}
+.form-group-sm .dropdown-menu > li > .checkbox {
+  padding: 5px 10px;
+}
+.dropdown-menu > li > .checkbox > label {
+  display: block;
 }
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
@@ -6002,6 +6013,10 @@ button.list-group-item-danger.active:focus {
   border-top: 1px solid #ddd;
   border-bottom-right-radius: 3px;
   border-bottom-left-radius: 3px;
+}
+.panel-footer .pagination {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 .panel > .list-group,
 .panel > .panel-collapse > .list-group {
