@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:50 Jul 7, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:4 Jul 7, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5298,6 +5298,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
   left: 100%;
   top: 0;
   visibility: visible;
+  max-height: none;
 }
 .navbar-static-side > .nav > li.navbar-header-side > a {
   display: none;
@@ -5309,6 +5310,7 @@ fieldset[disabled] .navbar-inverse .btn-link:focus {
 .navbar-static-side > .nav ul {
   visibility: hidden;
   max-height: 0;
+  background: #293846;
 }
 .navbar-static-side > .nav > li > a {
   padding: 14px 25px;
