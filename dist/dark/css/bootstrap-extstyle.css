@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:4 Jul 7, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 16:49 Jul 7, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4519,7 +4519,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav > li > a {
   position: relative;
   display: block;
-  padding: 14px 40px 14px 25px;
+  padding: 10px 15px;
   color: #337ab7;
 }
 .nav > li > a:hover,
@@ -4635,7 +4635,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #fff;
-  background-color: #fff;
+  background-color: #337ab7;
 }
 .nav-stacked > li {
   float: none;
@@ -5014,6 +5014,10 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
     margin-left: 15px;
     margin-right: 15px;
   }
+}
+.navbar-icon {
+  font-size: 32px;
+  padding: 9px;
 }
 @media (min-width: 768px) {
   .navbar-left {
