@@ -26,7 +26,7 @@
 //## Settings for some of the most global styles.
 
 //** Background color for `<body>`.
-@body-bg:               #fff;
+@body-bg:               #2f4050;
 //** Global text color on `<body>`.
 @text-color:            @gray-dark;
 
@@ -289,14 +289,13 @@
 //
 // Note: These variables are not generated into the Customizer.
 
-@zindex-navbar:               1000;
-@zindex-navbar-static-side:   1100;
-@zindex-dropdown:             1000;
-@zindex-popover:              1060;
-@zindex-tooltip:              1070;
-@zindex-navbar-fixed:         1030;
-@zindex-modal-background:     1040;
-@zindex-modal:                1050;
+@zindex-navbar:            1000;
+@zindex-dropdown:          1000;
+@zindex-popover:           1060;
+@zindex-tooltip:           1070;
+@zindex-navbar-fixed:      1030;
+@zindex-modal-background:  1040;
+@zindex-modal:             1050;
 
 
 //== Media queries breakpoints
@@ -380,7 +379,7 @@
 // Basics of a navbar
 @navbar-height:                    50px;
 @navbar-margin-bottom:             @line-height-computed;
-@navbar-border-radius:             @border-radius-base;
+@navbar-border-radius:             0;
 @navbar-padding-horizontal:        floor((@grid-gutter-width / 2));
 @navbar-padding-vertical:          ((@navbar-height - @line-height-computed) / 2);
 @navbar-collapse-max-height:       340px;
@@ -435,46 +434,12 @@
 @navbar-inverse-toggle-border-color:        #333;
 
 
-//== navbar-static-side
-@navbar-static-side-animation-duration:     500ms;
-
-@navbar-static-side-width-base:             220px;
-@navbar-static-side-width-mini:             70px;
-
-@navbar-static-side-font-size-mini:         16px;
-@navbar-static-side-font-size-base:         14px;
-
-@navbar-static-side-link-hover-bg:          #2f4050;
-
-@navbar-static-side-item-active-bg:         @navbar-static-side-link-hover-bg;
-@navbar-static-side-item-active-border-width:       0 0 0 4px;
-@navbar-static-side-item-active-border-style:       solid;
-@navbar-static-side-item-active-border-color:       #19aa8d;
-
-@navbar-static-side-link-color:             #a7b1c2;
-@navbar-static-side-link-padding:           14px 40px 14px 25px;
-@navbar-static-side-link-padding-mini:      14px 25px;
-
-@navbar-static-side-link-hover-color:       #fff;
-@navbar-static-side-link-hover-bg:          #293846;
-
-@navbar-static-side-link-active-padding:        14px 40px 14px 21px;
-@navbar-static-side-link-active-padding-mini:   14px 25px 14px 21px;
-
-@navbar-static-side-link-active-color:      @navbar-static-side-link-hover-color;
-
-@navbar-static-side-inner-list-padding-left:  20px;
-
-@navbar-static-side-inner-link-padding:       10px 35px 10px 15px;
-@navbar-static-side-inner-link-padding-mini:  @navbar-static-side-inner-link-padding;
-
-
 //== Navs
 //
 //##
 
 //=== Shared nav styles
-@nav-link-padding:                          10px 15px;
+@nav-link-padding:                          14px 40px 14px 25px;
 @nav-link-hover-bg:                         @gray-lighter;
 
 @nav-link-color:                            @link-color;
@@ -496,19 +461,9 @@
 @nav-tabs-justified-active-link-border-color:     @body-bg;
 
 //== Pills
-@nav-pills-border-radius:                   @border-radius-base;
-@nav-pills-active-link-hover-bg:            @component-active-bg;
-@nav-pills-active-link-hover-color:         @component-active-color;
-
-
-//== Page Wrapper
-//
-//##
-
-@page-wrapper-padding-horizontal:           0;
-@page-wrapper-padding-vertical:             0;
-
-@page-wrapper-bg:                           #f3f3f4;
+@nav-pills-border-radius:                   0;
+@nav-pills-active-link-hover-bg:            @navbar-static-side-link-active-color;
+@nav-pills-active-link-hover-color:         @navbar-static-side-link-active-color;
 
 
 //== Pagination
@@ -935,11 +890,7 @@
 @blockquote-font-size:        (@font-size-base * 1.25);
 //** Blockquote border color
 @blockquote-border-color:     @gray-lighter;
-//** Page header
-@page-header-padding-horizontal:    25px;
-@page-header-padding-vertical:      20px;
-@page-header-margin-horizontal:     0;
-@page-header-margin-vertical:       0;
+//** Page header border color
 @page-header-border-color:    @gray-lighter;
 //** Width of horizontal description list titles
 @dl-horizontal-offset:        @component-offset-horizontal;

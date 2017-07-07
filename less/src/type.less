@@ -149,9 +149,38 @@ mark,
 // -------------------------
 
 .page-header {
-  padding-bottom: ((@line-height-computed / 2) - 1);
-  margin: (@line-height-computed * 2) 0 @line-height-computed;
+  padding-bottom: @page-header-padding-vertical;
+  padding-top: @page-header-padding-vertical;
+  padding-left: @page-header-padding-horizontal;
+  padding-right: @page-header-padding-horizontal;
+  margin-bottom: @page-header-margin-vertical;
+  margin-top: @page-header-margin-vertical;
+  margin-left: @page-header-margin-horizontal;
+  margin-right: @page-header-margin-horizontal;
+
   border-bottom: 1px solid @page-header-border-color;
+
+  > h1,
+  > h2,
+  > h3,
+  > h4,
+  > h5,
+  > h6,
+  > .h1
+  > .h2,
+  > .h3,
+  > .h4,
+  > .h5,
+  > .h6 {
+    margin-top: 0;
+  }
+
+  > .breadcrumb {
+    margin-bottom: 0;
+    padding: 0;
+
+    background-color: transparent;
+  }
 }
 
 

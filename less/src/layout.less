@@ -1,0 +1,44 @@
+//
+// Layout
+// --------------------------------------------------
+
+// Footer Wrapper
+//
+// Make footer fixed on bottom while content height is less than
+// body's. When content height is larger than body's, make footer
+// positioned as static elements.
+
+body.footer-bottom {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+
+  > .footer-wrapper {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+}
+
+
+//
+// Page Wrapper
+// --------------------------------------------------
+
+.page-wrapper {
+  margin-left: @navbar-static-side-width-mini;
+  padding-left: @page-wrapper-padding-horizontal;
+  padding-right: @page-wrapper-padding-horizontal;
+  padding-top: @page-wrapper-padding-vertical;
+  padding-bottom: @page-wrapper-padding-vertical;
+
+  .transition(margin-left @navbar-static-side-animation-duration);
+
+  background-color: @page-wrapper-bg;
+
+  body.navbar-static-side-expanded & {
+    margin-left: @navbar-static-side-width-base;
+  }
+}

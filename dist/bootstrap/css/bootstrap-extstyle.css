@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 10:36 Jun 26, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:50 Jul 7, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -1419,9 +1419,33 @@ a.bg-gray:focus {
   background-color: #d5d5d5;
 }
 .page-header {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-bottom: 0;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
   border-bottom: 1px solid #eeeeee;
+}
+.page-header > h1,
+.page-header > h2,
+.page-header > h3,
+.page-header > h4,
+.page-header > h5,
+.page-header > h6,
+.page-header > .h1 > .h2,
+.page-header > .h3,
+.page-header > .h4,
+.page-header > .h5,
+.page-header > .h6 {
+  margin-top: 0;
+}
+.page-header > .breadcrumb {
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent;
 }
 ul,
 ol {
@@ -3965,6 +3989,9 @@ input[type="button"].btn-block {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
 }
+.bg-white {
+  background-color: #fff;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -4493,9 +4520,11 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   position: relative;
   display: block;
   padding: 10px 15px;
+  color: #337ab7;
 }
 .nav > li > a:hover,
 .nav > li > a:focus {
+  color: #23527c;
   text-decoration: none;
   background-color: #eeeeee;
 }
@@ -5195,6 +5224,150 @@ fieldset[disabled] .navbar-inverse .btn-link:hover,
 .navbar-inverse .btn-link[disabled]:focus,
 fieldset[disabled] .navbar-inverse .btn-link:focus {
   color: #444;
+}
+@keyframes show-content-animation {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes show-content-animation {
+  /*Safari and Chrome*/
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.navbar-static-side {
+  position: absolute;
+  z-index: 1100;
+  width: 70px;
+  -webkit-transition: width 500ms;
+  -o-transition: width 500ms;
+  transition: width 500ms;
+}
+.navbar-static-side > .nav li {
+  position: relative;
+}
+.navbar-static-side > .nav li > a {
+  white-space: nowrap;
+  padding: 10px 35px 10px 15px;
+  font-size: 16px;
+  color: #a7b1c2;
+}
+.navbar-static-side > .nav li > a:hover,
+.navbar-static-side > .nav li > a:focus {
+  color: #fff;
+  background-color: #293846;
+  text-decoration: noen;
+}
+.navbar-static-side > .nav li > a > .pull-right {
+  position: relative;
+  left: 23px;
+  top: 3px;
+  font-size: 13px;
+  -webkit-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  transform: rotate(-90deg);
+  -webkit-transition: transform 500ms;
+  -o-transition: transform 500ms;
+  transition: transform 500ms;
+}
+.navbar-static-side > .nav li.active {
+  background-color: #293846;
+}
+.navbar-static-side > .nav li.active > a,
+.navbar-static-side > .nav li.active > a:hover,
+.navbar-static-side > .nav li.active > a:focus {
+  color: #fff;
+  background-color: #293846;
+}
+.navbar-static-side > .nav li.active > a > .pull-right {
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+.navbar-static-side > .nav li.active > ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  visibility: visible;
+}
+.navbar-static-side > .nav > li.navbar-header-side > a {
+  display: none;
+}
+.navbar-static-side > .nav > li.navbar-header-side > a.navbar-brand {
+  display: block;
+  float: none;
+}
+.navbar-static-side > .nav ul {
+  visibility: hidden;
+  max-height: 0;
+}
+.navbar-static-side > .nav > li > a {
+  padding: 14px 25px;
+}
+.navbar-static-side > .nav > li > a > .nav-label,
+.navbar-static-side > .nav > li > a > .pull-right {
+  display: none;
+}
+.navbar-static-side > .nav > li.active {
+  border-width: 0 0 0 4px;
+  border-style: solid;
+  border-color: #19aa8d;
+}
+.navbar-static-side > .nav > li.active > a,
+.navbar-static-side > .nav > li.active > a:hover,
+.navbar-static-side > .nav > li.active > a:focus {
+  padding: 14px 25px 14px 21px;
+}
+body.navbar-static-side-expanded .navbar-static-side {
+  -webkit-animation: show-content-animation 1500ms 1;
+  -o-animation: show-content-animation 1500ms 1;
+  animation: show-content-animation 1500ms 1;
+  width: 220px;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li > a {
+  font-size: 14px;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li > a > .nav-label,
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li > a > .pull-right {
+  display: inline;
+  -webkit-transform: rotate(0);
+  -ms-transform: rotate(0);
+  -o-transform: rotate(0);
+  transform: rotate(0);
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li > ul {
+  padding-left: 20px;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li.active > a {
+  padding: 10px 35px 10px 15px;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li.active > a > .pull-right {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked li.active > ul {
+  position: static;
+  max-height: none;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked > li.active > a {
+  padding: 14px 40px 14px 21px;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked > li > a {
+  padding: 14px 40px 14px 25px;
+}
+body.navbar-static-side-expanded .navbar-static-side > .nav-stacked > li > a > .nav-label {
+  margin-left: 5px;
 }
 .breadcrumb {
   padding: 8px 15px;
@@ -6412,6 +6585,32 @@ button.close {
   background: transparent;
   border: 0;
   -webkit-appearance: none;
+}
+body.footer-bottom {
+  position: absolute;
+  min-height: 100%;
+  width: 100%;
+}
+body.footer-bottom > .footer-wrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.page-wrapper {
+  margin-left: 70px;
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  -webkit-transition: margin-left 500ms;
+  -o-transition: margin-left 500ms;
+  transition: margin-left 500ms;
+  background-color: #f3f3f4;
+}
+body.navbar-static-side-expanded .page-wrapper {
+  margin-left: 220px;
 }
 .modal-open {
   overflow: hidden;
