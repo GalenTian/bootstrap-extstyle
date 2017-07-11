@@ -1,6 +1,6 @@
-// navbar-static-side
+// Navbar alignment options
 //
-// Show item content slowly when navbar expended.
+// Display the navbar to the left of the page.
 
 @keyframes show-content-animation
 {
@@ -13,18 +13,48 @@
   to { opacity: 1; }
 }
 
+// Static left (unfixed) navbar
 .navbar-static-side {
   position: absolute;
-  z-index: @zindex-navbar-static-side;
+  z-index: @zindex-navbar-fixed;
 
   width: @navbar-static-side-width-mini;
 
   .transition(width @navbar-static-side-animation-duration);
 
-  > .nav {
+  // Navbar header
+  > .navbar-header {
+    float: none;
+
+    > .navbar-brand {
+      display: block;
+      float: none;
+      white-space: nowrap;
+      padding: @navbar-static-side-link-padding-mini;
+      font-size: @navbar-static-side-font-size-mini;
+      color: @navbar-static-side-link-color;
+
+      &:hover,
+      &:focus {
+        color: @navbar-static-side-link-active-color;
+        background-color: @navbar-static-side-item-active-bg;
+        text-decoration: noen;
+      }
+
+      .nav-label {
+        display: none;
+      }
+    }
+  }
+
+  // Navbar nav
+  .navbar-collapse > .navbar-nav,
+  .navbar-nav {
+    float: none;
 
     // Normal styles
     li {
+      float: none;
       position: relative;
 
       // Normalize link style
@@ -43,9 +73,10 @@
         }
 
         > .pull-right {
-          position: relative;
-          left: 23px;
-          top: 3px;
+          position: absolute;
+          right: 23px;
+          top: 50%;
+          margin-top: -8px;
 
           font-size: 13px;
 
@@ -80,15 +111,6 @@
           visibility: visible;
           max-height: none;
         }
-      }
-    }
-
-    > li.navbar-header-side > a {
-      display: none;
-
-      &.navbar-brand {
-        display: block;
-        float: none;
       }
     }
 
@@ -132,7 +154,18 @@
 
     width: @navbar-static-side-width-base;
 
-    > .nav-stacked {
+    > .navbar-header {
+
+      > .navbar-brand {
+
+        .nav-label {
+          display: inline;
+        }
+      }
+    }
+
+    > .navbar-collapse > .navbar-nav,
+    > .navbar-nav {
       li {
         > a {
           font-size: @navbar-static-side-font-size-base;

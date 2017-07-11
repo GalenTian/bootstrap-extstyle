@@ -34,3 +34,29 @@
     color: @thumbnail-caption-color;
   }
 }
+
+.thumbnail-app {
+  border: none;
+
+  > .glyphicon {
+    display: block;
+    width: @thumbnail-app-icon-size;
+    height: @thumbnail-app-icon-size;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: @thumbnail-app-icon-size;
+  }
+
+  // Reset hover state for linked versions
+  a&:hover,
+  a&:focus,
+  a&.active {
+    border-color: none;
+    text-decoration: none;
+    background-color: @thumbnail-app-bg-hover;
+  }
+}
+
+.thumbnail-inline {
+  display: inline-block;
+}

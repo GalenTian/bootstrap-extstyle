@@ -80,7 +80,8 @@
     // alignment of right-aligned contents.
     .navbar-fixed-top &,
     .navbar-static-top &,
-    .navbar-fixed-bottom & {
+    .navbar-fixed-bottom &,
+    .navbar-static-side & {
       padding-left: 0;
       padding-right: 0;
     }
@@ -363,6 +364,26 @@
     float: left;
     margin-left: @navbar-padding-horizontal;
     margin-right: @navbar-padding-horizontal;
+  }
+}
+
+// Icons in navbars
+//
+//
+
+.navbar-icon {
+  > li > a {
+    padding-top: ((@navbar-height - @navbar-icon-size) / 2);
+    padding-bottom: ((@navbar-height - @navbar-icon-size) / 2);
+    padding-left: @navbar-icon-padding-horizontal;
+    padding-right: @navbar-icon-padding-horizontal;
+
+    font-size: @navbar-icon-size;
+
+    > .caret {
+      position: relative;
+      top: -5px;
+    }
   }
 }
 
