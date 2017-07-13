@@ -1,0 +1,58 @@
+.expander {
+  position: relative;
+
+  > .expander-container {
+    position: relative;
+    background-color: @expander-container-bg;
+    overflow: hidden;
+    z-index: 5;
+
+    .transition(height 500ms);
+
+    > .expander-control {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: @expander-control-height;
+      .opacity(@expander-control-opacity);
+      font-size: @expander-control-font-size;
+      color: @expander-control-color;
+      text-align: center;
+      text-shadow: @expander-text-shadow;
+      z-index: 5;
+
+      &.bottom {
+        left: auto;
+        right: 0;
+        #gradient > .vertical(@start-color: rgba(0,0,0,.0001); @end-color: rgba(0,0,0,.5));
+      }
+
+      // Hover/focus state
+      &:hover,
+      &:focus {
+        outline: 0;
+        color: @expander-control-color;
+        text-decoration: none;
+        .opacity(.9);
+      }
+
+      > .glyphicon {
+        vertical-align: middle;
+
+        .transition(transform 500ms);
+      }
+    }
+  }
+}
+
+.expanded {
+
+  > .expander-container {
+    .box-shadow(0 6px 12px rgba(0,0,0,.175));
+
+    > .expander-control > .glyphicon {
+      .rotate(180deg);
+    }
+  }
+}
