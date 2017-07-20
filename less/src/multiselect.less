@@ -1,0 +1,39 @@
+.multi-select {
+  > .dropdown-toggle {
+    > .multiselect-content {
+      display: block;
+      overflow: hidden;
+    }
+  }
+
+  > .dropdown-menu {
+    max-height: none !important;
+
+    > div {
+      padding-left: 10px;
+      padding-right: 10px;
+
+      &.checkall {
+        padding-top: 5px;
+        border-bottom: 1px solid @multi-select-border-color;
+      }
+    }
+
+    > ul {
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      margin-bottom: 0;
+      max-height: 240px;
+      overflow: auto;
+
+      > li {
+        list-style: none;
+
+        > label {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
