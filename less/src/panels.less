@@ -154,6 +154,14 @@
     }
   }
   > .panel-table {
+
+    &:first-child {
+      .border-top-radius((@panel-border-radius - 1));
+    }
+    &:last-child {
+      .border-bottom-radius((@panel-border-radius - 1));
+    }
+
     .table,
     .table-responsive > .table,
     .panel-collapse > .table {
@@ -167,7 +175,8 @@
   }
   // Add border top radius for first one
   > .table:first-child,
-  > .table-responsive:first-child > .table:first-child {
+  > .table-responsive:first-child > .table:first-child,
+  > .panel-table > .table:first-child {
     .border-top-radius((@panel-border-radius - 1));
 
     > thead:first-child,

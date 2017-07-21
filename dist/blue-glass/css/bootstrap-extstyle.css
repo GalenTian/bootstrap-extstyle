@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 10:59 Jul 18, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:59 Jul 21, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -4177,6 +4177,17 @@ tbody.collapse.in {
     right: auto;
   }
 }
+.dropdown-content > .dropdown-toggle > .dropdown-content {
+  display: block;
+  overflow: hidden;
+}
+.dropdown-content > .dropdown-menu {
+  border: none;
+  padding: 0;
+}
+.dropdown-content > .dropdown-menu > .panel:last-child {
+  margin-bottom: 0;
+}
 .btn-group,
 .btn-group-vertical {
   position: relative;
@@ -6330,6 +6341,14 @@ button.list-group-item-danger.active:focus {
   padding-left: 15px;
   padding-right: 15px;
 }
+.panel > .panel-table:first-child {
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+}
+.panel > .panel-table:last-child {
+  border-bottom-right-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
 .panel > .panel-table .table,
 .panel > .panel-table .table-responsive > .table,
 .panel > .panel-table .panel-collapse > .table {
@@ -6342,35 +6361,46 @@ button.list-group-item-danger.active:focus {
   padding-right: 15px;
 }
 .panel > .table:first-child,
-.panel > .table-responsive:first-child > .table:first-child {
+.panel > .table-responsive:first-child > .table:first-child,
+.panel > .panel-table > .table:first-child {
   border-top-right-radius: 3px;
   border-top-left-radius: 3px;
 }
 .panel > .table:first-child > thead:first-child > tr:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child,
+.panel > .panel-table > .table:first-child > thead:first-child > tr:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child,
-.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child {
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child,
+.panel > .panel-table > .table:first-child > tbody:first-child > tr:first-child {
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:first-child,
+.panel > .panel-table > .table:first-child > thead:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:first-child,
+.panel > .panel-table > .table:first-child > tbody:first-child > tr:first-child td:first-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:first-child,
+.panel > .panel-table > .table:first-child > thead:first-child > tr:first-child th:first-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child th:first-child,
-.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child {
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:first-child,
+.panel > .panel-table > .table:first-child > tbody:first-child > tr:first-child th:first-child {
   border-top-left-radius: 3px;
 }
 .panel > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child td:last-child,
+.panel > .panel-table > .table:first-child > thead:first-child > tr:first-child td:last-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child td:last-child,
+.panel > .panel-table > .table:first-child > tbody:first-child > tr:first-child td:last-child,
 .panel > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .panel > .table-responsive:first-child > .table:first-child > thead:first-child > tr:first-child th:last-child,
+.panel > .panel-table > .table:first-child > thead:first-child > tr:first-child th:last-child,
 .panel > .table:first-child > tbody:first-child > tr:first-child th:last-child,
-.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child {
+.panel > .table-responsive:first-child > .table:first-child > tbody:first-child > tr:first-child th:last-child,
+.panel > .panel-table > .table:first-child > tbody:first-child > tr:first-child th:last-child {
   border-top-right-radius: 3px;
 }
 .panel > .table:last-child,
@@ -6754,6 +6784,7 @@ body.navbar-static-side-expanded .page-wrapper {
 }
 .expander > .expander-middle {
   position: absolute;
+  width: 100%;
 }
 .expander > .expander-middle > .expander-container {
   position: relative;
