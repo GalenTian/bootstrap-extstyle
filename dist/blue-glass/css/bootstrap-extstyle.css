@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 10:30 Jul 24, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:3 Jul 24, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -3735,21 +3735,69 @@ input[type="button"].btn-block {
   padding-top: 1px;
   padding-bottom: 1px;
 }
+.padding-top-base {
+  padding-top: 6px;
+}
+.padding-top-large {
+  padding-top: 10px;
+}
+.padding-top-small {
+  padding-top: 5px;
+}
+.padding-top-xs {
+  padding-top: 1px;
+}
+.padding-bottom-base {
+  padding-bottom: 6px;
+}
+.padding-bottom-large {
+  padding-bottom: 10px;
+}
+.padding-bottom-small {
+  padding-bottom: 5px;
+}
+.padding-bottom-xs {
+  padding-bottom: 1px;
+}
 .padding-horizontal-base {
   padding-left: 12px;
   padding-right: 12px;
 }
 .padding-horizontal-large {
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 .padding-horizontal-small {
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .padding-horizontal-xs {
-  padding-top: 5px;
-  padding-bottom: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.padding-left-base {
+  padding-left: 12px;
+}
+.padding-left-large {
+  padding-left: 16px;
+}
+.padding-left-small {
+  padding-left: 10px;
+}
+.padding-left-xs {
+  padding-left: 5px;
+}
+.padding-right-base {
+  padding-right: 12px;
+}
+.padding-right-large {
+  padding-right: 16px;
+}
+.padding-right-small {
+  padding-right: 10px;
+}
+.padding-right-xs {
+  padding-right: 5px;
 }
 .padding-clear {
   padding: 0 !important;
