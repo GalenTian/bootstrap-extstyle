@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:3 Jul 24, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 15:36 Jul 24, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -5610,6 +5610,11 @@ body.navbar-static-side-expanded .navbar-static-side > .navbar-nav > li > a > .n
   border-bottom-right-radius: 3px;
   border-top-right-radius: 3px;
 }
+@media (max-width: 768px) {
+  .pagination-manager {
+    display: none;
+  }
+}
 .pager {
   padding-left: 0;
   margin: 20px 0;
@@ -6843,6 +6848,8 @@ body.navbar-static-side-expanded .page-wrapper {
   background-color: #fff;
   overflow: hidden;
   z-index: 5;
+  padding-left: 10px;
+  padding-right: 10px;
   -webkit-transition: height 500ms;
   -o-transition: height 500ms;
   transition: height 500ms;
