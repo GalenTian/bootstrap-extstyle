@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 14:59 Jul 21, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 10:30 Jul 24, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -3992,6 +3992,9 @@ input[type="button"].btn-block {
 .bg-white {
   background-color: #fff;
 }
+.bg-gray {
+  background-color: #f3f3f4;
+}
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -6215,7 +6218,9 @@ button.list-group-item-danger.active:focus {
 .panel {
   margin-bottom: 20px;
   background-color: #fff;
-  border: 1px solid transparent;
+  border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   border-radius: 4px;
   -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
   box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
@@ -6747,7 +6752,6 @@ body.footer-bottom > .footer-wrapper {
   -webkit-transition: margin-left 500ms;
   -o-transition: margin-left 500ms;
   transition: margin-left 500ms;
-  background-color: #f3f3f4;
 }
 body.navbar-static-side-expanded .page-wrapper {
   margin-left: 220px;
