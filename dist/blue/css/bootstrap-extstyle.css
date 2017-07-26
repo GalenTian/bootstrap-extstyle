@@ -1,4 +1,4 @@
-/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 17:27 Jul 24, 2017 */
+/* Version: 0.1.0 | Licensed under MIT (https://github.com/galentian/bootstrap-extstyle/blob/master/LICENSE) | Packaged at 15:28 Jul 25, 2017 */
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
@@ -6811,6 +6811,7 @@ body.navbar-static-side-expanded .page-wrapper {
 }
 .page-content {
   padding: 6px 12px;
+  overflow: auto;
 }
 .sail {
   position: fixed;
